@@ -1,0 +1,8 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header, div, ul, li, nav{
+    border: 2px solid black;
+}

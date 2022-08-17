@@ -1,0 +1,31 @@
+/*Alinhamento*/
+.row, .nav, .informationItem{
+    display: flex;
+}
+.column, {
+    display: table-row;
+}
+
+/*Margens maiores*/
+#container{
+    margin:156px 9% 163px 9%;
+    justify-content: space-between;
+}
+#bigProfile{
+    width: 62%;
+}
+#smallProfile{
+    width: 31.8%;
+    align-content: center;
+}
+#profileMargin{
+    
+}
+
+#profilePic{
+    height: 100px;
+    width: 285px;
+}
+img{
+    object-fit: fill;
+}
