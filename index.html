@@ -13,55 +13,68 @@
 
 <body>
     <header class="row">
-        <img src="./img/imgLogoBlackRed.svg" id="logo">
+        <div id="divLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
         <nav class="nav">
             <div class="navItem"><a href="" class="itemLink">Perfil</a></div>
             <div class="navItem"><button id="agenda"><a href="" class="itemLink">Agende sua aula</a></button></div>
         </nav>
     </header>
+    <div class="row" id="divFundo">
+        <img src="./img/logoVermelha1.svg" id="logoFundo1">
+        <img src="./img/logoVermelha1.svg" id="logoFundo2">
+    </div>
     <div id="container" class="row">
         <div id="smallProfile">
             <div id="profileMargin" class="column">
-
                 <div id="profilePic">
-                    
+                    <img src="./img/imgProfile.jpg" alt="Imagem de perfil" id="imgProfile">
                 </div>
                 <!--foto de perfil-->
 
-                <div id="information2" class="row">
-                    <div id="name">Juliana Soster</div>
-                    <div id="coutry"><img src="./img/iconBandeira.png" height=34 width=34></div>
+                <div class="information1">
+                    <div class="title">
+                        <h1>Juliana Soster</h1>
+                    </div>
+                    <div id="country"><img src="./img/iconBandeira.png" class="mediumIcon"></div>
                 </div>
                 <!--nome e bandeira-->
-
-                <div id="languages">
-                    <div class="languageList">Ingles C2 . Português C2</div>
+                <div class="languageList">
+                    <h3 style="color:#626262">Ingles C2 . Português C2<h3>
                 </div>
                 <!--linguagens-->
 
                 <div id="information2" class="column">
                     <div class="informationItem">
-                        <div class="informationIcon"><img src="./img/iconLocation.svg"></div>
-                        <div class="informationDesc">Brasil, Rio Grande do Sul, Vargas</div>
+                        <div class="smallIcon"><img src="./img/iconLocation.svg"></div>
+                        <div class="informationDescription">
+                            <h2>Brasil, Rio Grande do Sul, Vargas</h2>
+                        </div>
                     </div>
                     <div class="informationItem">
-                        <div class="informationIcon"><img src="./img/iconePhone.svg"></div>
-                        <div class="informationDesc">(51) 99953-3173</div>
+                        <div class="smallIcon"><img src="./img/iconePhone.svg"></div>
+                        <div class="informationDescription">
+                            <h2>(51) 99953-3173</h2>
+                        </div>
                     </div>
                     <div class="informationItem">
-                        <div class="informationIcon"><img src="./img/iconEmail.svg"></div>
-                        <div class="informationDesc">julianatsoster@gmail.com</div>
+                        <div class="smallIcon"><img src="./img/iconEmail.svg"></div>
+                        <div class="informationDescription">
+                            <h2>julianatsoster@gmail.com</h2>
+                        </div>
                     </div>
                     <!--Tabela de contato-->
 
                     <div id="socialMedia" class="column">
-                        <div>
-                            <button class="socialMedia" id="LinkedIn"><img src="./img/iconLinkedInBlack.svg" height="26"
-                                    width="26">LinkedIn</button>
+                        <div id="divBtnLinkedIn">
+                            <button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
+                                    class="smallIcon">
+                                <h4>LinkedIn</h4>
+                            </button>
                         </div>
-                        <div>
-                            <button class="socialMedia" id="Instagram"><img src="./img/iconInstagram.svg" height="26"
-                                    width="26">Instagram</button>
+                        <div id="divBtnInstagram">
+                            <button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg" class="smallIcon">
+                                <h4>Instagram</h4>
+                            </button>
                         </div>
                     </div>
                     <!--botões redes sociais-->
@@ -75,31 +88,46 @@
 
         <div id="bigProfile" class="column">
             <div id="tags" class="row">
-                <div class="tags" id="tagInglesEmpresarial">Inglês Empresarial</div>
-                <div class="tags" id="tagGramatica">Gramática</div>
-                <div class="tags" id="tagConversacao">Conversação</div>
-                <div class="tags" id="tagLeitura">Leitura</div>
-                <div class="tags" id="tagVocabulario">Vocabulário</div>
+                <div class="tags" id="tagInglesEmpresarial" style="background: #EA394E">
+                    <h5>Inglês Empresarial</h5>
+                </div>
+                <div class="tags" id="tagGramatica" style="background: #01E66F;">
+                    <h5>Gramática</h5>
+                </div>
+                <div class="tags" id="tagConversacao" style="background: #0DA8FF">
+                    <h5>Conversação</h5>
+                </div>
+                <div class="tags" id="tagLeitura" style="background: #EA394E">
+                    <h5>Leitura</h5>
+                </div>
+                <div class="tags" id="tagVocabulario" style="background: #01E66F">
+                    <h5>Vocabulário</h5>
+                </div>
             </div>
             <!--tags-->
-            <div id="presentationVideo">
-                <video src="./img/video.mp4"></video>
+            <div class="video">
+                <iframe id="videoPresentation" width="732" height="412" style="padding: 0px 0px 0px 0px;"
+                    src="https://www.youtube.com/embed/AFxCO_DyzYM" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <!--video de apresentação-->
             <div id="about" class="row">
-                <div class="aboutIcon"><img src="./img/iconUser.svg"></div>
-                <div id="aboutDescription" class="column">
-                    <div>Sobre mim</div>
-                    <div>Comecei a minha trajetória com a língua inglesa cedo, aos 5
-                        anos de
-                        idade.
-                        Lembro claramente das minhas aulas de inglês na
-                        escola e, também, da primeira palavra que
-                        aprendi em inglês, watermelon. Durante toda
-                        a minha trajetória escolar, estudei em uma
-                        escola particular que oferecia línguas
-                        adicionais, e, por isso, tive contato com o inglês desde a
-                        infância.
+                <div class="mediumIcon"><img src="./img/iconUser.svg"></div>
+                <div id="divSobreDescricao" class="column">
+                    <div id="ttlSobreMim">
+                        <h1>Sobre mim</h1>
+                    </div>
+                    <div id="descSobreMim">
+                        <h2>Comecei a minha trajetória com a língua inglesa cedo, aos 5
+                            anos de idade.Lembro claramente das minhas aulas de inglês na
+                            escola e, também, da primeira palavra que
+                            aprendi em inglês, watermelon. Durante toda
+                            a minha trajetória escolar, estudei em uma
+                            escola particular que oferecia línguas
+                            adicionais, e, por isso, tive contato com o inglês desde a
+                            infância.
+                        </h2>
                     </div>
                 </div>
                 <!--texto-->
