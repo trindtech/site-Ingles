@@ -12,131 +12,376 @@
 </head>
 
 <body>
+    <!--MENU-->
     <header class="row">
         <div id="divLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
         <nav class="nav">
-            <div class="navItem"><a href="" class="itemLink">Perfil</a></div>
-            <div class="navItem"><button id="agenda"><a href="" class="itemLink">Agende sua aula</a></button></div>
+            <div class="navItem"><a href="" class="itemLink">
+                    <h6>Perfil</h6>
+                </a></div>
+            <div class="navItem"><button id="btnAgenda">Agendar uma aula</button></div>
         </nav>
     </header>
-    <div class="row" id="divFundo">
-        <img src="./img/logoVermelha1.svg" id="logoFundo1">
-        <img src="./img/logoVermelha1.svg" id="logoFundo2">
-    </div>
-    <div id="container" class="row">
-        <div id="smallProfile">
-            <div id="profileMargin" class="column">
-                <div id="profilePic">
-                    <img src="./img/imgProfile.jpg" alt="Imagem de perfil" id="imgProfile">
-                </div>
-                <!--foto de perfil-->
 
-                <div class="information1">
-                    <div class="title">
-                        <h1>Juliana Soster</h1>
+    <div class="containers">
+        <!--1 TELA-->
+        <div id="container" class="row">
+            <div id="smallProfile">
+                <div id="profileMargin" class="column">
+                    <div id="profilePic">
+                        <img src="./img/imgProfile.jpg" alt="Imagem de perfil" id="imgProfile">
                     </div>
-                    <div id="country"><img src="./img/iconBandeira.png" class="mediumIcon"></div>
-                </div>
-                <!--nome e bandeira-->
-                <div class="languageList">
-                    <h3 style="color:#626262">Ingles C2 . Português C2<h3>
-                </div>
-                <!--linguagens-->
+                    <!--foto de perfil-->
 
-                <div id="information2" class="column">
-                    <div class="informationItem">
-                        <div class="smallIcon"><img src="./img/iconLocation.svg"></div>
-                        <div class="informationDescription">
-                            <h2>Brasil, Rio Grande do Sul, Vargas</h2>
+                    <div class="information1">
+                        <div class="title">
+                            <h1>Juliana Soster</h1>
                         </div>
+                        <div id="country"><img src="./img/iconBandeira.png" class="mediumIcon"></div>
                     </div>
-                    <div class="informationItem">
-                        <div class="smallIcon"><img src="./img/iconePhone.svg"></div>
-                        <div class="informationDescription">
-                            <h2>(51) 99953-3173</h2>
-                        </div>
+                    <!--nome e bandeira-->
+                    <div class="languageList">
+                        <h3 style="color:#626262">Ingles C2 . Português C2<h3>
                     </div>
-                    <div class="informationItem">
-                        <div class="smallIcon"><img src="./img/iconEmail.svg"></div>
-                        <div class="informationDescription">
-                            <h2>julianatsoster@gmail.com</h2>
-                        </div>
-                    </div>
-                    <!--Tabela de contato-->
+                    <!--linguagens-->
 
-                    <div id="socialMedia" class="column">
-                        <div id="divBtnLinkedIn">
-                            <button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
-                                    class="smallIcon">
-                                <h4>LinkedIn</h4>
-                            </button>
+                    <div id="information2" class="column">
+                        <div class="informationItem">
+                            <div class="smallIcon"><img src="./img/iconLocation.svg"></div>
+                            <div class="informationDescription">
+                                <h2>Brasil, Rio Grande do Sul, Vargas</h2>
+                            </div>
                         </div>
-                        <div id="divBtnInstagram">
-                            <button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg" class="smallIcon">
-                                <h4>Instagram</h4>
-                            </button>
+                        <div class="informationItem">
+                            <div class="smallIcon"><img src="./img/iconePhone.svg"></div>
+                            <div class="informationDescription">
+                                <h2>(51) 99953-3173</h2>
+                            </div>
                         </div>
+                        <div class="informationItem">
+                            <div class="smallIcon"><img src="./img/iconEmail.svg"></div>
+                            <div class="informationDescription">
+                                <h2>julianatsoster@gmail.com</h2>
+                            </div>
+                        </div>
+                        <!--Tabela de contato-->
+
+                        <div id="socialMedia" class="column">
+                            <div id="divBtnLinkedIn">
+                                <button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
+                                        class="smallIcon">
+                                    <h4>LinkedIn</h4>
+                                </button>
+                            </div>
+                            <div id="divBtnInstagram">
+                                <button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg"
+                                        class="smallIcon">
+                                    <h4>Instagram</h4>
+                                </button>
+                            </div>
+                        </div>
+                        <!--botões redes sociais-->
                     </div>
-                    <!--botões redes sociais-->
+                    <!--information2-->
                 </div>
-                <!--information2-->
+                <!--Margem do perfil-->
             </div>
-            <!--Margem do perfil-->
+            <!--primeiro quadrado-->
+
+            <div id="bigProfile" class="column">
+                <div id="tags" class="row">
+                    <div class="tags" id="tagInglesEmpresarial" style="background: #EA394E">
+                        <h5>Inglês Empresarial</h5>
+                    </div>
+                    <div class="tags" id="tagGramatica" style="background: #01E66F;">
+                        <h5>Gramática</h5>
+                    </div>
+                    <div class="tags" id="tagConversacao" style="background: #0DA8FF">
+                        <h5>Conversação</h5>
+                    </div>
+                    <div class="tags" id="tagLeitura" style="background: #EA394E">
+                        <h5>Leitura</h5>
+                    </div>
+                    <div class="tags" id="tagVocabulario" style="background: #01E66F">
+                        <h5>Vocabulário</h5>
+                    </div>
+                </div>
+                <!--tags-->
+                <div class="video">
+                    <iframe id="videoPresentation" width="100%" height="100%" style="padding: 0px 0px 0px 0px;"
+                        src="https://www.youtube.com/embed/AFxCO_DyzYM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!--video de apresentação-->
+                <div id="about" class="row">
+                    <div class="mediumIcon"><img src="./img/iconUser.svg"></div>
+                    <div id="divSobreDescricao" class="column">
+                        <div id="ttlSobreMim">
+                            <h1>Sobre mim</h1>
+                        </div>
+                        <div id="descSobreMim">
+                            <h2>Comecei a minha trajetória com a língua inglesa cedo, aos 5
+                                anos de idade.Lembro claramente das minhas aulas de inglês na
+                                escola e, também, da primeira palavra que
+                                aprendi em inglês, watermelon. Durante toda
+                                a minha trajetória escolar, estudei em uma
+                                escola particular que oferecia línguas
+                                adicionais, e, por isso, tive contato com o inglês desde a
+                                infância.
+                            </h2>
+                        </div>
+                    </div>
+                    <!--texto-->
+                </div>
+                <!--sobre-->
+            </div>
+            <!--bigprofile-->
         </div>
-        <!--primeiro quadrado-->
+        <!--page content-->
 
-
-        <div id="bigProfile" class="column">
-            <div id="tags" class="row">
-                <div class="tags" id="tagInglesEmpresarial" style="background: #EA394E">
-                    <h5>Inglês Empresarial</h5>
-                </div>
-                <div class="tags" id="tagGramatica" style="background: #01E66F;">
-                    <h5>Gramática</h5>
-                </div>
-                <div class="tags" id="tagConversacao" style="background: #0DA8FF">
-                    <h5>Conversação</h5>
-                </div>
-                <div class="tags" id="tagLeitura" style="background: #EA394E">
-                    <h5>Leitura</h5>
-                </div>
-                <div class="tags" id="tagVocabulario" style="background: #01E66F">
-                    <h5>Vocabulário</h5>
-                </div>
-            </div>
-            <!--tags-->
-            <div class="video">
-                <iframe id="videoPresentation" width="732" height="412" style="padding: 0px 0px 0px 0px;"
-                    src="https://www.youtube.com/embed/AFxCO_DyzYM" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <!--video de apresentação-->
-            <div id="about" class="row">
-                <div class="mediumIcon"><img src="./img/iconUser.svg"></div>
-                <div id="divSobreDescricao" class="column">
-                    <div id="ttlSobreMim">
-                        <h1>Sobre mim</h1>
-                    </div>
-                    <div id="descSobreMim">
-                        <h2>Comecei a minha trajetória com a língua inglesa cedo, aos 5
-                            anos de idade.Lembro claramente das minhas aulas de inglês na
-                            escola e, também, da primeira palavra que
-                            aprendi em inglês, watermelon. Durante toda
-                            a minha trajetória escolar, estudei em uma
-                            escola particular que oferecia línguas
-                            adicionais, e, por isso, tive contato com o inglês desde a
-                            infância.
-                        </h2>
+        <!--2 TELA-->
+        <div class="container2">
+            <div class="formacao">
+                <div class="titulo">
+                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                            class="mediumIcon"></div>
+                    <div class="ttlFormacao">
+                        <h6>Formação</h6>
                     </div>
                 </div>
-                <!--texto-->
+                <div class="entrada1">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entrada">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entradaF">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--sobre-->
+            <div class="xp">
+                <div class="titulo">
+                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                            class="mediumIcon"></div>
+                    <div class="ttlFormacao">
+                        <h6>Experiência Profissional</h6>
+                    </div>
+                </div>
+
+                <div class="entrada1">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entrada">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entrada">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entrada">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entradaF">
+                    <div class="itemFormacao">
+                        <div class="caminho">
+                            <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
+                        </div>
+                        <div class="formacaoDescricao">
+                            <div class="dataFormacao">
+                                <h2>2018</h2>
+                            </div>
+                            <div class="formacaoLocal">
+                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                <div class="column">
+                                    <div>
+                                        <h6>Bacharel em Letras</h6>
+                                    </div>
+                                    <div>
+                                        <h2>UFRGS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="certificados">
+                <div class="titulo">
+                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                            class="mediumIcon"></div>
+                    <div class="ttlFormacao">
+                        <h6>Certificados</h6>
+                    </div>
+                </div>
+                <div class="itemFormacao">
+                    <div class="caminho">
+                        <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
+                    </div>
+                    <div class="formacaoDescricao">
+                        <div class="dataFormacao">
+                            <h2>2018</h2>
+                        </div>
+                        <div class="formacaoLocal">
+                            <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                            <div class="column">
+                                <div>
+                                    <h6>Bacharel em Letras</h6>
+                                </div>
+                                <div>
+                                    <h2>UFRGS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--bigprofile-->
+        
     </div>
-    <!--page content-->
+    <div class="container3">
+            
+    </div>
+    <footer></footer>
 </body>
 
 </html>

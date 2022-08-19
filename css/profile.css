@@ -7,8 +7,11 @@
 }
 
 /*Margens maiores*/
+.containers{
+    margin:5% 9% 0px 9%;
+}
 #container{
-    margin:156px 9% 163px 9%;
+    
     justify-content: space-between;
     z-index: 1;
 }
@@ -21,18 +24,32 @@
 }
 
 /*Fundo*/
-#divFundo{
-    z-index: 0;
-    justify-content: space-between;
+body{
+    background-image: url("../img/imgFundo8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Menu*/
 header{
-    margin: 20px;
+    margin-top: 31px;
+    margin-right: 43px;
+    margin-left: 43px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
+}
+#divLogo{
+    align-self: center;
+}
+
+#imgLogo{
+    width: 100%;
+    height: 100%;
+    max-width: 151px;
+    max-height: 28.15px;
+    
 }
 .nav{
     display: flex;
@@ -42,22 +59,47 @@ header{
     gap: 57px;
 }
 
+#itemLink{
+    color: #131313;
+    text-decoration-style: none;
+}
+#btnAgenda{
+    background-color: #EA394E;
+    width: 270px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EFEFEF;
+}
+#fntPerfil{
+
+}
+
 /*Small Profile*/
 
 #smallProfile{
     /*Alinhamento*/
     width: 31.8%;
-    object-fit: contain;
-    align-content: center;
+    height: 100%;
     max-width: 378px;
-    max-height: 705px;
 
     /*Style*/
     background: #EFEFEF;
     box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
 }
-
+#imgProfile{
+    width: 100%;
+    height: 100%;
+    
+    max-width: 285px;
+    max-height: 285px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
 .information1{
     margin-top: 10px;
     display: flex;
@@ -79,7 +121,9 @@ header{
     margin-top: 15px;
 }
 button{
-    display: flex;
+    text-decoration: none;
+    display: inline-block;
+    color: #EFEFEF;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -101,7 +145,6 @@ button{
 #btnLinkedIn{
     background: #0DA8FF;
 }
-
 #btnInstagram{
     background: #EA394E;
     
@@ -135,6 +178,9 @@ button{
     display: flex;
     padding: 0px;
     margin-bottom: 30px;
+    height: 58.6%;
+    width: 100%;
+    
 }
 #divSobreDescricao{
     margin-left: 5px;
@@ -152,7 +198,6 @@ h1{
     line-height: 29px;
     color: #131313;
 }
-
 h2{
     font-style: normal;
     font-weight: 700;
@@ -160,7 +205,6 @@ h2{
     line-height: 20px;
     color: #626262;
 }
-
 h3{
     font-style: normal;
     font-weight: 700;
@@ -180,25 +224,18 @@ h5{
     line-height: 20px;
     color:#EFEFEF;
 }
+h6{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #131313;
+}
+a{text-decoration: none;}
 
 /*Imagens*/
-#imgProfile{
-    width: 100%;
-    height: 100%;
-    
-    max-width: 285px;
-    max-height: 285px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px;
-}
 
-#imgLogo{
-    width: 100%;
-    height: 100%;
-    max-width: 151px;
-    max-height: 28.15px;
-}
+
+
 
 /*Ícones*/
 .smallIcon{
@@ -228,10 +265,76 @@ h5{
     object-fit: cover;
     object-position: center;
 }
+.containers{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 
-
-
-/*Cores*/
-body{
+    margin:5% 9% 156px 9%;
+}
+.itemFormacao{
+    display: flex;
+    flex: row;
+}
+.container2{
+    display: flex;
+    gap: 20px;
+}
+.formacao{
+    display: flex;
+    flex-direction: column;
+}
+.entrada, .entradaF{
+    margin-top: -20px;
+}
+.formacao, .xp, .certificados{
+    padding: 29.6px 26.3px 29.6px 26.3px;
     background: #EFEFEF;
+    box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    width: 100%;
+    height: fit-content;
+}
+.caminho, .circulo, .linha{
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.iconBandeiraFormacao, .iconFormacao{
+    width: 29px;
+    height: 29px;
+}
+.titulo, .itemFormacao{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.ttlFormacao{
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+.formacaoLocal{
+    display: flex;
+    flex-direction: row;
+    gap:12px
+}
+.formacaoDescricao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.itemFormacao{
+    gap:12px
+}
+.caminho{
+    padding-left: 5px;
+}
+.container3{
+    background-color: #131313;
+    width: 100%;
+    height: 100vh;
+    background: #131313;
+    box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.25);
+
 }
