@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/global.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
     <title>TrindTech - Inglês</title>
 </head>
 
@@ -376,11 +378,116 @@
                 </div>
             </div>
         </div>
-        
     </div>
+    
     <div class="container3">
-            
+        <div class="divMargemContainer3">
+            <div class="divFormTitulo">
+                <div>
+                    <p id="txtFicou">FICOU INTERESSADO?</p>
+                </div>
+                <div>
+                    <p id="txtAgende">AGENDE A SUA AULA!</p>
+                </div>
+                <div>
+                    <h4>Conte-nos um pouco sobre você...</h4>
+                </div>
+            </div>
+            <div class="divFormForm">
+                <form>
+                    <div class="divForm1">
+                        <div class="divForm1Left">
+                            <div class="divFormName">
+                                <label for="txtNome">
+                                    Nome: *<br>
+                                    <input type="text" name="txtNome" id="txtNome" class="inputText">
+                                </label>
+                            </div>
+                            <div class="divFormSobrenome">
+                                <label for="txtSobrenome">
+                                    Sobrenome:<br>
+                                    <input type="text" name="txtSobrenome" id="txtSobrenome" class="inputText">
+                                </label>
+                            </div>
+                            <div class="divFormTelefone">
+                                <label for="telTelefone">Telefone:<br>
+                                    <input type="tel" name="telTelefone" id="telTelefone" class="inputText">
+                                </label>
+                            </div>
+                            <div class="divFormEmail">
+                                <label for="emailEmail">Email: *<br>
+                                    <input type="email" name="emailEmail" id="emailEmail" class="inputText">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="divForm1Right">
+                            <div class="divFormFoto">
+                            </div>
+                            <div class="divFormLabelFoto">
+                                <div class="divForm1Descricao">
+                                    <h4>Selecione uma foto</h4>
+                                </div>
+                                <div class="divForm1Descricao">
+                                    <h4>(opcional)</h4>
+                                </div>
+                            </div>
+                            <div class="divFormCEP">
+                                <label for="txtCEP">CEP:<br>
+                                    <input type="text" name="txtCEP" id="txtCEP" class="inputText">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divForm2">
+                        <div class="divForm2Titulo">
+                            <h4>Sobre a aula:</h4>
+                        </div>
+                        <div class="divForm2Lines">
+                            <div class="divForm2RadioTitulo">
+                                <label>Modelo de aula: *</label>
+                            </div>
+                            <div class="divForm2Radio">
+                                <input type="radio" name="radioModelos" id="radioPresencial"><label
+                                    for="radioPresencial">Presencial</label>
+                            </div>
+                            <div class="divForm2Radio">
+                                <input type="radio" name="radioModelos" id="radioVirtual"><label
+                                    for="radioVirtual">Virtual</label>
+                            </div>
+                            <div class="divForm2RadioTitulo">
+                                <label>Primeira aula: *</label>
+                            </div>
+                            <div class="divForm2Radio">
+                                <input type="radio" name="radioPrimeira" id="radioMaisRapido"><label
+                                    for="radioMaisRapido">O
+                                    mais rápido possível</label>
+                            </div>
+                            <div class="divForm2Radio">
+                                <input type="radio" name="radioModelos" id="radioCombinar"><label
+                                    for="radioCombinar">Combinar uma data</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divForm3">
+                        <div class="divForm3Descricao">
+                            <h4>Conte um pouco sobre as aulas que você precisa: *</h4>
+                        </div>
+                        <div class="divForm3Txt">
+                            <textarea name="txtDescricao" id="txtDescricao" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="divFormImg">
+                <img src="./img/imgForm.svg" alt="Icons">
+            </div>
+        </div>
     </div>
+
+    <div><img src="./img/logoVermelha1.svg" id="imgFormLogo" alt="Logo"></div>
+
     <footer></footer>
 </body>
 
