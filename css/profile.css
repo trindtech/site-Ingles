@@ -4,10 +4,12 @@
 }
 
 /*Margens maiores*/
-#container{
+.sessionProfile{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    z-index: 1;
 }
+
 #bigProfile{
     width: 62%;
 }
@@ -266,8 +268,8 @@ a{text-decoration: none;}
     display: flex;
     flex: row;
 }
-.container2{
-    display: flex;
+.sessionCurriculo{
+    display: inline-flex;
     gap: 20px;
 }
 .formacao{
@@ -320,18 +322,20 @@ a{text-decoration: none;}
 .caminho{
     padding-left: 5px;
 }
-.container3{
+.sessionForm{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 100%;
     background: #131313;
     box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.25);
+    padding: 152px 10% 10% 10%;
 }
-.divMargemContainer3{
+.divMargemSessionForm{
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 152px 12.3% 10% 13.3%;
     object-fit: fill;
 }
 /* Formulário*/
@@ -372,9 +376,8 @@ form{
     text-align: left;
 }
 #imgFormLogo{
-    margin-left: -50px;
-    margin-top: -30%;
-    width: 35%;
+    
+    width: 100%;
     filter: drop-shadow(0px 10px 13px rgba(0, 0, 0, 0.25));
 }
 #txtFicou{
@@ -431,4 +434,18 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footerVermelho{
+    width: 35%;
+    margin-left: -50px;
+    margin-top: -30%;
+}
+#footerLogo{
+    align-self: center;
+    margin-right: 5%;
 }
