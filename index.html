@@ -15,39 +15,42 @@
 
 <body>
     <!--MENU-->
-    <header class="row">
-        <div id="divLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
-        <nav class="nav">
-            <div class="navItem"><a href="" class="itemLink">
-                    <h6>Perfil</h6>
-                </a></div>
-            <div class="navItem"><button id="btnAgenda">Agendar uma aula</button></div>
-        </nav>
+    <header>
+        <div class="divMargemHeader">
+            <div id="divLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
+            <nav class="nav">
+                <div class="navItem">
+                        <h6>Perfil</h6>
+                    </div>
+                <div class="navItem"><a href="#sessionForm"><button id="btnAgenda">Agendar uma aula</button></a></div>
+            </nav>
+        </div>
     </header>
 
     <div class="containers">
         <!--1 TELA-->
         <div class="sessionProfile">
             <div id="smallProfile">
-                <div id="profileMargin" class="column">
-                    <div id="profilePic">
-                        <img src="./img/imgProfile.jpg" alt="Imagem de perfil" id="imgProfile">
-                    </div>
-                    <!--foto de perfil-->
-
-                    <div class="information1">
-                        <div class="title">
-                            <h1>Juliana Soster</h1>
+                <div id="profileMargin">
+                    <div class="divSmallName">
+                        <div id="profilePic">
+                            <img src="./img/imgProfile.jpg" alt="Imagem de perfil" id="imgProfile">
                         </div>
-                        <div id="country"><img src="./img/iconBandeira.png" class="mediumIcon"></div>
-                    </div>
-                    <!--nome e bandeira-->
-                    <div class="languageList">
-                        <h3 style="color:#626262">Ingles C2 . Português C2<h3>
-                    </div>
-                    <!--linguagens-->
+                        <!--foto de perfil-->
 
-                    <div id="information2" class="column">
+                        <div class="information1">
+                            <div class="title">
+                                <h1>Juliana Soster</h1>
+                            </div>
+                            <div id="country"><img src="./img/iconBandeira.png" class="mediumIcon"></div>
+                        </div>
+                        <!--nome e bandeira-->
+                        <div class="languageList">
+                            <h3 style="color:#626262">Ingles C2 . Português C2<h3>
+                        </div>
+                        <!--linguagens-->
+                    </div>
+                    <div id="information2">
                         <div class="informationItem">
                             <div class="smallIcon"><img src="./img/iconLocation.svg"></div>
                             <div class="informationDescription">
@@ -68,18 +71,18 @@
                         </div>
                         <!--Tabela de contato-->
 
-                        <div id="socialMedia" class="column">
+                        <div id="socialMedia">
                             <div id="divBtnLinkedIn">
-                                <button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
+                                <a href="https://www.linkedin.com/in/andriele-joras/"><button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
                                         class="smallIcon">
                                     <h4>LinkedIn</h4>
-                                </button>
+                                </button></a>
                             </div>
                             <div id="divBtnInstagram">
-                                <button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg"
+                                <a href="https://www.instagram.com/"><button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg"
                                         class="smallIcon">
                                     <h4>Instagram</h4>
-                                </button>
+                                </button></a>
                             </div>
                         </div>
                         <!--botões redes sociais-->
@@ -90,8 +93,8 @@
             </div>
             <!--primeiro quadrado-->
 
-            <div id="bigProfile" class="column">
-                <div id="tags" class="row">
+            <div id="bigProfile">
+                <div id="tags">
                     <div class="tags" id="tagInglesEmpresarial" style="background: #EA394E">
                         <h5>Inglês Empresarial</h5>
                     </div>
@@ -116,7 +119,7 @@
                         allowfullscreen></iframe>
                 </div>
                 <!--video de apresentação-->
-                <div id="about" class="row">
+                <div id="about">
                     <div class="mediumIcon"><img src="./img/iconUser.svg"></div>
                     <div id="divSobreDescricao" class="column">
                         <div id="ttlSobreMim">
@@ -124,7 +127,7 @@
                         </div>
                         <div id="descSobreMim">
                             <h2>Comecei a minha trajetória com a língua inglesa cedo, aos 5
-                                anos de idade.Lembro claramente das minhas aulas de inglês na
+                                anos de idade. Lembro claramente das minhas aulas de inglês na
                                 escola e, também, da primeira palavra que
                                 aprendi em inglês, watermelon. Durante toda
                                 a minha trajetória escolar, estudei em uma
@@ -145,76 +148,78 @@
         <!--2 TELA-->
         <div class="sessionCurriculo">
             <div class="formacao">
-                <div class="titulo">
-                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
-                            class="mediumIcon"></div>
-                    <div class="ttlFormacao">
-                        <h6>Formação</h6>
-                    </div>
-                </div>
-                <div class="entrada1">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                <div class="curriculoMargem">
+                    <div class="titulo">
+                        <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                                class="mediumIcon"></div>
+                        <div class="ttlFormacao">
+                            <h6>Formação</h6>
                         </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
+                    </div>
+                    <div class="entrada1">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
                             </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="entrada">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
+                    <div class="entrada">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
                             </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="entradaF">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
+                    <div class="entradaF">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
                             </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -223,107 +228,141 @@
                 </div>
             </div>
             <div class="xp">
-                <div class="titulo">
-                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
-                            class="mediumIcon"></div>
-                    <div class="ttlFormacao">
-                        <h6>Experiência Profissional</h6>
+                <div class="curriculoMargem">
+                    <div class="titulo">
+                        <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                                class="mediumIcon"></div>
+                        <div class="ttlFormacao">
+                            <h6>Experiência Profissional</h6>
+                        </div>
                     </div>
-                </div>
 
-                <div class="entrada1">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
+                    <div class="entrada1">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
                             </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entrada">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                            </div>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entrada">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                            </div>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entrada">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
+                            </div>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entradaF">
+                        <div class="itemFormacao">
+                            <div class="caminho">
+                                <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
+                            </div>
+                            <div class="formacaoDescricao">
+                                <div class="dataFormacao">
+                                    <h2>2018</h2>
+                                </div>
+                                <div class="formacaoLocal">
+                                    <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
+                                    <div class="column">
+                                        <div>
+                                            <h6>Bacharel em Letras</h6>
+                                        </div>
+                                        <div>
+                                            <h2>UFRGS</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="entrada">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
-                            </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+            <div class="certificados">
+                <div class="curriculoMargem">
+                    <div class="titulo">
+                        <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
+                                class="mediumIcon"></div>
+                        <div class="ttlFormacao">
+                            <h6>Certificados</h6>
                         </div>
                     </div>
-                </div>
-                <div class="entrada">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
-                            </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="entrada">
-                    <div class="itemFormacao">
-                        <div class="caminho">
-                            <div><img src="./img/imgCaminhoTop.svg" alt="Caminho"></div>
-                        </div>
-                        <div class="formacaoDescricao">
-                            <div class="dataFormacao">
-                                <h2>2018</h2>
-                            </div>
-                            <div class="formacaoLocal">
-                                <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                                <div class="column">
-                                    <div>
-                                        <h6>Bacharel em Letras</h6>
-                                    </div>
-                                    <div>
-                                        <h2>UFRGS</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="entradaF">
                     <div class="itemFormacao">
                         <div class="caminho">
                             <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
@@ -341,36 +380,6 @@
                                     <div>
                                         <h2>UFRGS</h2>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="certificados">
-                <div class="titulo">
-                    <div class="iconFormacao"><img src="./img/iconTTLFormacao.svg" alt="Icon Formatação"
-                            class="mediumIcon"></div>
-                    <div class="ttlFormacao">
-                        <h6>Certificados</h6>
-                    </div>
-                </div>
-                <div class="itemFormacao">
-                    <div class="caminho">
-                        <div><img src="./img/imgCirculo.svg" alt="Caminho"></div>
-                    </div>
-                    <div class="formacaoDescricao">
-                        <div class="dataFormacao">
-                            <h2>2018</h2>
-                        </div>
-                        <div class="formacaoLocal">
-                            <div><img src="./img/iconFlagBrazil.svg" class="smallIcon"></div>
-                            <div class="column">
-                                <div>
-                                    <h6>Bacharel em Letras</h6>
-                                </div>
-                                <div>
-                                    <h2>UFRGS</h2>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +389,7 @@
         </div>
     </div>
 
-    <div class="sessionForm">
+    <div class="sessionForm" id="sessionForm">
         <div class="divMargemSessionForm">
             <div class="divFormTitulo">
                 <div>
@@ -397,41 +406,42 @@
                 <form>
                     <div class="divForm1">
                         <div class="divForm1Left">
-                            <div class="divFormName">
+                            <div class="divFormInput">
                                 <label for="txtNome">
-                                    Nome: *<br>
+                                    Nome: <b>*</b><br>
                                     <input type="text" name="txtNome" id="txtNome" class="inputText">
                                 </label>
                             </div>
-                            <div class="divFormSobrenome">
+                            <div class="divFormInput">
                                 <label for="txtSobrenome">
                                     Sobrenome:<br>
                                     <input type="text" name="txtSobrenome" id="txtSobrenome" class="inputText">
                                 </label>
                             </div>
-                            <div class="divFormTelefone">
+                            <div class="divFormInput">
                                 <label for="telTelefone">Telefone:<br>
                                     <input type="tel" name="telTelefone" id="telTelefone" class="inputText">
                                 </label>
                             </div>
-                            <div class="divFormEmail">
-                                <label for="emailEmail">Email: *<br>
+                            <div class="divFormInput">
+                                <label for="emailEmail">Email: <b>*</b><br>
                                     <input type="email" name="emailEmail" id="emailEmail" class="inputText">
                                 </label>
                             </div>
                         </div>
                         <div class="divForm1Right">
                             <div class="divFormFoto">
+                                <input type="file" accept="image/*" alt="imgAluno" onchange="loadFile(event)"> 
                             </div>
                             <div class="divFormLabelFoto">
                                 <div class="divForm1Descricao">
                                     <h4>Selecione uma foto</h4>
                                 </div>
                                 <div class="divForm1Descricao">
-                                    <h4>(opcional)</h4>
+                                    <h4><b>(opcional)</b></h4>
                                 </div>
                             </div>
-                            <div class="divFormCEP">
+                            <div class="divFormInput">
                                 <label for="txtCEP">CEP:<br>
                                     <input type="text" name="txtCEP" id="txtCEP" class="inputText">
                                 </label>
@@ -440,30 +450,30 @@
                     </div>
                     <div class="divForm2">
                         <div class="divForm2Titulo">
-                            <h4>Sobre a aula:</h4>
+                            <p id="txtSobreAAula">Sobre a aula:</p>
                         </div>
                         <div class="divForm2Lines">
                             <div class="divForm2RadioTitulo">
-                                <label>Modelo de aula: *</label>
+                                <label>Modelo de aula: <b>*</b></label>
                             </div>
                             <div class="divForm2Radio">
-                                <input type="radio" name="radioModelos" id="radioPresencial"><label
+                                <input type="radio" name="radioModelos" id="radioPresencial" class="radio"><label
                                     for="radioPresencial">Presencial</label>
                             </div>
                             <div class="divForm2Radio">
-                                <input type="radio" name="radioModelos" id="radioVirtual"><label
+                                <input type="radio" name="radioModelos" id="radioVirtual" class="radio"><label
                                     for="radioVirtual">Virtual</label>
                             </div>
                             <div class="divForm2RadioTitulo">
-                                <label>Primeira aula: *</label>
+                                <label>Primeira aula: <b>*</b></label>
                             </div>
                             <div class="divForm2Radio">
-                                <input type="radio" name="radioPrimeira" id="radioMaisRapido"><label
+                                <input type="radio" name="radioPrimeira" id="radioMaisRapido" class="radio"><label
                                     for="radioMaisRapido">O
                                     mais rápido possível</label>
                             </div>
                             <div class="divForm2Radio">
-                                <input type="radio" name="radioModelos" id="radioCombinar"><label
+                                <input type="radio" name="radioModelos" id="radioCombinar" class="radio"><label
                                     for="radioCombinar">Combinar uma data</label>
                             </div>
                         </div>
@@ -471,10 +481,13 @@
 
                     <div class="divForm3">
                         <div class="divForm3Descricao">
-                            <h4>Conte um pouco sobre as aulas que você precisa: *</h4>
+                            <p id="txtConte">Conte um pouco sobre as aulas que você precisa: <b>*</b></p>
                         </div>
                         <div class="divForm3Txt">
                             <textarea name="txtDescricao" id="txtDescricao" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="divForm3Button" >
+                            <button type="submit" id="divForm3Enviar">Agendar</button>
                         </div>
                     </div>
                 </form>
@@ -489,6 +502,6 @@
         <div id="footerVermelho"><img src="./img/logoVermelha1.svg" id="imgFormLogo" alt="Logo"></div>
         <div id="footerLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

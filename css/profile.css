@@ -1,118 +1,78 @@
-/*Alinhamento*/
-.row, .nav, .informationItem{
+/*Gerais*/
+.row,
+.informationItem {
     display: flex;
 }
-
-/*Margens maiores*/
-.sessionProfile{
+.containers {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 64px;
+    margin: 51px 10% 50px 10%;
 }
 
-#bigProfile{
-    width: 62%;
-}
-#profileMargin{
+/*Margens*/
+#profileMargin {
+    display: flex;
+    flex-direction: column;
     object-fit: fill;
     margin: 10% 12.3% 10% 13.3%;
 }
 
-/*Fundo*/
-body{
+.divMargemHeader {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 5% 0px 5%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.divMargemSessionForm {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    object-fit: fill;
+    gap: 70px;
+    margin: 10% 5% 10% 5%;
+}
+
+/*Tags*/
+html{
+    scroll-behavior: smooth;
+}
+
+body {
     background-image: url("../img/imgFundo8.svg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/*Menu*/
-header{
-    margin-top: 31px;
-    margin-right: 43px;
-    margin-left: 43px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 1;
-}
-#divLogo{
-    align-self: center;
-}
-
-#imgLogo{
-    width: 100%;
-    height: 100%;
-    max-width: 151px;
-    max-height: 28.15px;
-    
-}
-.nav{
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 57px;
-}
-
-#itemLink{
-    color: #131313;
-    text-decoration-style: none;
-}
-#btnAgenda{
-    background-color: #EA394E;
-    width: 270px;
-    height: 54px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #EFEFEF;
-}
-
-/*Small Profile*/
-
-#smallProfile{
-    /*Alinhamento*/
-    width: 31.8%;
-    height: 100%;
-    max-width: 378px;
-
-    /*Style*/
-    background: #EFEFEF;
-    box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
-}
-#imgProfile{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
     width: 100%;
-    height: 100%;
-    
-    max-width: 285px;
-    max-height: 285px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15px;
 }
-.information1{
-    margin-top: 10px;
+
+footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.informationDescription{
-    padding-left: 5px;
-    align-self: center;
-}
-#country{
-    align-items: flex-start;
-}
-.languageList{
-    margin-top: -8px;
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-#information2{
-    margin-top: 15px;
+b {
+    color: #EA394E;
 }
-button{
+
+button {
+    cursor: pointer;
     text-decoration: none;
     display: inline-block;
     color: #EFEFEF;
@@ -127,32 +87,231 @@ button{
     height: 52px;
     border-radius: 15px;
     border-style: none;
-}
-#divBtnLinkedIn{
-    margin-top: 15px;
-}
-#divBtnInstagram{
-    margin-top: 5px;
-}
-#btnLinkedIn{
-    background: #0DA8FF;
-}
-#btnInstagram{
-    background: #EA394E;
+    -webkit-font-smoothing: antialiased;
+    transition: .2s;
     
 }
-
-/*BiggerProfile*/
-
-#tags{
+button:hover{
+    -webkit-transform: scale(1.05);
+}
+button:active{
+    transform: translateY(3px)
+}
+button::after, button::before{
+    border-radius: 3px;
+}
+form {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+label {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+textarea {
+    background: #626262;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    color: #EFEFEF;
+    border-style: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+input {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+/*Fontes*/
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #131313;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #626262;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #EFEFEF;
+}
+
+#txtConte, h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EFEFEF;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #131313;
+}
+
+a {
+    text-decoration: none;
+    color: #EFEFEF;
+}
+
+/*Nav*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10%;
+}
+
+#btnAgenda {
+    background-color: #EA394E;
+    width: 270px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EFEFEF;
+}
+
+#divLogo {
+    align-self: center;
+}
+
+#imgLogo {
+    width: 100%;
+    height: 100%;
+    max-width: 151px;
+    max-height: 28.15px;
+
+}
+
+/*Session Profile*/
+.sessionProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#imgProfile {
+    width: 100%;
+    height: 100%;
+
+    max-width: 285px;
+    max-height: 285px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+#smallProfile {
+    /*Alinhamento*/
+    width: 31.8%;
+    height: 100%;
+    max-width: 378px;
+
+    /*Style*/
+    background: #EFEFEF;
+    box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.information1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.informationDescription {
+    padding-left: 5px;
+    align-self: center;
+}
+
+#country {
+    align-items: flex-start;
+}
+
+.languageList {
+    margin-top: -4px;
+}
+
+#information2 {
+    margin-top: 15px;
+}
+
+#divBtnLinkedIn {
+    margin-top: 15px;
+}
+
+#divBtnInstagram {
+    margin-top: 5px;
+}
+
+#btnLinkedIn {
+    background: #0DA8FF;
+}
+
+#btnInstagram {
+    background: #EA394E;
+
+}
+
+/*Big profile*/
+#bigProfile {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#itemLink {
+    color: #131313;
+    text-decoration-style: none;
+}
+
+#tags {
+    display: flex;
+    flex-direction: row;
     align-content: space-between;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
-.tags{
+.tags {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -163,7 +322,12 @@ button{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.11);
     border-radius: 10px;
 }
-.video{
+.tags:hover{
+    -webkit-transform: scale(1.05);
+}
+.video {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -172,114 +336,78 @@ button{
     margin-bottom: 30px;
     height: 58.6%;
     width: 100%;
-    
+
 }
-#divSobreDescricao{
+
+#divSobreDescricao {
     margin-left: 5px;
 
 }
-#ttlSobreMim{
+
+#ttlSobreMim {
     padding: 0;
     margin-bottom: 5px;
 }
-/*Fontes*/
-h1{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #131313;
-}
-h2{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #626262;
-}
-h3{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-}
-h4{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #EFEFEF;
-}
-h5{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color:#EFEFEF;
-}
-h6{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #131313;
-}
-a{text-decoration: none;}
 
 /*Imagens*/
 
-
-
-
 /*Ícones*/
-.smallIcon{
+.smallIcon {
     width: 100%;
     height: 100%;
-    
+
     max-width: 30px;
     max-height: 30px;
     object-fit: cover;
     object-position: center;
 }
-.mediumIcon{
+
+.mediumIcon {
     width: 100%;
     height: 100%;
-    
+
     max-width: 34px;
     max-height: 34px;
     object-fit: cover;
     object-position: center;
 }
-.bigIcon{
+
+.bigIcon {
     width: 100%;
     height: 100%;
-    
+
     max-width: 36px;
     max-height: 36px;
     object-fit: cover;
     object-position: center;
 }
-.containers{
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
 
-    margin:5% 9% 156px 9%;
-}
-.itemFormacao{
+/*Curriculo*/
+
+.itemFormacao {
     display: flex;
     flex: row;
 }
-.sessionCurriculo{
-    display: inline-flex;
+
+.sessionCurriculo {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
-.formacao{
+
+.formacao {
     display: flex;
     flex-direction: column;
 }
-.entrada, .entradaF{
+
+.entrada,
+.entradaF {
     margin-top: -20px;
 }
-.formacao, .xp, .certificados{
+
+.formacao,
+.xp,
+.certificados {
     padding: 29.6px 26.3px 29.6px 26.3px;
     background: #EFEFEF;
     box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.15);
@@ -287,59 +415,66 @@ a{text-decoration: none;}
     width: 100%;
     height: fit-content;
 }
-.caminho, .circulo, .linha{
+
+.caminho,
+.circulo,
+.linha {
     align-content: center;
     justify-items: center;
     justify-content: center;
 }
-.iconBandeiraFormacao, .iconFormacao{
+
+.iconBandeiraFormacao,
+.iconFormacao {
     width: 29px;
     height: 29px;
 }
-.titulo, .itemFormacao{
+
+.titulo,
+.itemFormacao {
     display: flex;
     flex-direction: row;
     align-content: center;
 }
-.ttlFormacao{
+
+.ttlFormacao {
     margin-left: 5px;
     margin-top: 3px;
     margin-bottom: 20px;
 }
-.formacaoLocal{
+
+.formacaoLocal {
     display: flex;
     flex-direction: row;
-    gap:12px
+    gap: 12px
 }
-.formacaoDescricao{
+
+.formacaoDescricao {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.itemFormacao{
-    gap:12px
+
+.itemFormacao {
+    gap: 12px
 }
-.caminho{
+
+.caminho {
     padding-left: 5px;
 }
-.sessionForm{
+
+.sessionForm {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    height: 100vh;
+    height: 70em;
     background: #131313;
     box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.25);
-    padding: 152px 10% 10% 10%;
+
 }
-.divMargemSessionForm{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    object-fit: fill;
-}
+
 /* Formulário*/
-.divFormFoto{
+.divFormFoto {
     width: 153px;
     height: 153px;
     border-radius: 76.5px;
@@ -349,38 +484,43 @@ a{text-decoration: none;}
     background-position: center;
     background-size: cover;
 }
-.divFormImg{
+.divForm2, .divForm3{
+    display: flex;
+    flex-direction: column;
+}
+.divForm3{
+    gap: 40px;
+}
+.divFormImg {
     object-fit: cover;
-    object-position: center;
 }
 
-.divFormForm{
+.divFormForm {
     display: flex;
     flex-direction: column;
-   
-}
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    gap: 5%;
 }
-.divForm1{
+
+.divForm1 {
     display: flex;
     flex-direction: row;
     gap: 1%;
 }
-.divForm2Lines{
+
+.divForm2Lines {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 2fr 2fr;
     text-align: left;
 }
-#imgFormLogo{
-    
+
+#imgFormLogo {
+
     width: 100%;
     filter: drop-shadow(0px 10px 13px rgba(0, 0, 0, 0.25));
 }
-#txtFicou{
+
+#txtFicou {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -388,64 +528,267 @@ form{
     line-height: 39px;
     color: #FFFFFF;
 }
-#txtAgende{
+
+#txtAgende {
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 49px;
     color: #EA394E;
 }
-.inputText{
+
+.inputText {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     background: #626262;
     border-radius: 10px;
     width: 284px;
     height: 34px;
-}
-.divForm1{
-    justify-content: space-between;
-}
-
-label{
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-
     color: #FFFFFF;
+    padding-left: 10px;
+    border-style: none;
+}
 
+.divForm1 {
+    justify-content: space-between;
 }
-textarea{
-    background: #626262;
-    border-radius: 10px;
-    width: 100%;
-    height: 152px;
+
+#information2 {
+    display: flex;
+    flex-direction: column;
 }
-.divForm1Right{
+
+#socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divForm1Right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-input{
-    margin-top: 13px;
-    margin-bottom: 13px;
-}
 
-.divFormLabelFoto{
+.divFormLabelFoto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+#txtSobreAAula {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EFEFEF;
+
+    margin-top: 15px;
 }
-#footerVermelho{
+
+#txtConte {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.divForm2Lines {
+    align-items: center;
+}
+
+.divForm2Radio {
+    padding: 10px;
+}
+
+.radio {
+    margin-right: 10px;
+}
+#divForm3Enviar{
+    background-color: #EA394E;
+    width: 270px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EFEFEF;
+}
+
+/*Footer*/
+#footerVermelho {
     width: 35%;
     margin-left: -50px;
     margin-top: -30%;
 }
-#footerLogo{
+
+#footerLogo {
     align-self: center;
     margin-right: 5%;
+}
+
+@media screen and (max-width: 660px) {
+    div.divFormImg {
+        display: none;
+    }
+
+    div.divMargemSessionForm {
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    div.sessionForm {
+        padding: 0px;
+        justify-content: center;
+        padding: 10vw;
+    }
+
+    div#footerVermelho {
+        display: none;
+
+    }
+
+    footer {
+        justify-content: center;
+        width: 100vw;
+    }
+
+    div.sessionCurriculo {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    div.sessionProfile {
+        flex-direction: column;
+        justify-self: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    div#smallProfile {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    div.containers {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    div#profileMargin {
+        margin: 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #imgProfile {
+        max-width: 185px;
+        max-height: 185px;
+    }
+
+    div#profilePic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.smallName {
+        padding: 10px;
+        align-items: center;
+    }
+
+    div#information2 {
+        margin: 0px;
+    }
+
+    div.title {
+        padding-right: 5px;
+    }
+
+    div.languageList {
+        padding-top: 1px;
+    }
+
+    div#bigProfile {
+        width: 100%;
+    }
+
+    div.video {
+        height: 330px;
+    }
+
+    div#tags {
+        padding-bottom: 10px;
+    }
+
+    div.containers {
+        align-items: center;
+    }
+
+    div.formacao,
+    .xp,
+    .certificados {
+        padding: 0px;
+    }
+
+    div.curriculoMargem {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    body {
+        padding: 0px 50px 0px 50px;
+        background-image: url(../img/imgFundo660.svg);
+        background-position: left;
+        background-size: cover;
+    }
+    .divMargemHeader{
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    div.divFormImg {
+        display: none;
+    }
+    div.divMargemSessionForm {
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+    }
+    .divForm1{
+        justify-content: start;
+    }
+    div#footerVermelho {
+        display: none;
+
+    }
+    footer {
+        justify-content: center;
+        width: 100vw;
+        height: 20vh;
+    }
+    .sessionForm{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1370px) {
+    #tags{
+        justify-content: flex-start;
+    }
 }
