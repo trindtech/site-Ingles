@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
     <title>TrindTech - Inglês</title>
 </head>
 
@@ -20,8 +24,8 @@
             <div id="divLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
             <nav class="nav">
                 <div class="navItem">
-                        <h6>Perfil</h6>
-                    </div>
+                    <h6>Perfil</h6>
+                </div>
                 <div class="navItem"><a href="#sessionForm"><button id="btnAgenda">Agendar uma aula</button></a></div>
             </nav>
         </div>
@@ -73,16 +77,16 @@
 
                         <div id="socialMedia">
                             <div id="divBtnLinkedIn">
-                                <a href="https://www.linkedin.com/in/andriele-joras/"><button class="row" id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg"
-                                        class="smallIcon">
-                                    <h4>LinkedIn</h4>
-                                </button></a>
+                                <a href="https://www.linkedin.com/in/andriele-joras/"><button class="row"
+                                        id="btnLinkedIn"><img src="./img/iconLinkedInLetters.svg" class="smallIcon">
+                                        <h4>LinkedIn</h4>
+                                    </button></a>
                             </div>
                             <div id="divBtnInstagram">
-                                <a href="https://www.instagram.com/"><button class="row" id="btnInstagram"><img src="./img/iconInstagram.svg"
-                                        class="smallIcon">
-                                    <h4>Instagram</h4>
-                                </button></a>
+                                <a href="https://www.instagram.com/"><button class="row" id="btnInstagram"><img
+                                            src="./img/iconInstagram.svg" class="smallIcon">
+                                        <h4>Instagram</h4>
+                                    </button></a>
                             </div>
                         </div>
                         <!--botões redes sociais-->
@@ -419,19 +423,20 @@
                                 </label>
                             </div>
                             <div class="divFormInput">
-                                <label for="telTelefone">Telefone:<br>
-                                    <input type="tel" name="telTelefone" id="telTelefone" class="inputText">
+                                <label for="txtTelefone">Telefone:<br>
+                                    <input type="text" name="numberTelefone" id="numberTelefone" class="inputText"
+                                        onkeypress="$(this).mask('(00) 00000-0009')">
                                 </label>
                             </div>
                             <div class="divFormInput">
-                                <label for="emailEmail">Email: <b>*</b><br>
+                                <label for="txtEmail">Email: <b>*</b><br>
                                     <input type="email" name="emailEmail" id="emailEmail" class="inputText">
                                 </label>
                             </div>
                         </div>
-                        <div class="divForm1Right">
+                        <div class=" divForm1Right">
                             <div class="divFormFoto">
-                                <input type="file" accept="image/*" alt="imgAluno" onchange="loadFile(event)"> 
+                                <img id="output" src="./img/imgProfile.jpg" alt="imgAluno">
                             </div>
                             <div class="divFormLabelFoto">
                                 <div class="divForm1Descricao">
@@ -440,10 +445,15 @@
                                 <div class="divForm1Descricao">
                                     <h4><b>(opcional)</b></h4>
                                 </div>
+                                <div class="divFormFotoInput">
+                                    <input type="file" accept="image/*" alt="imgAluno" onchange="loadFile(event)"
+                                        id="formInputFile">
+                                </div>
                             </div>
                             <div class="divFormInput">
                                 <label for="txtCEP">CEP:<br>
-                                    <input type="text" name="txtCEP" id="txtCEP" class="inputText">
+                                    <input type="text" name="txtCEP" id="txtCEP" class="inputText"
+                                        onkeypress="$(this).mask('00000-009')">
                                 </label>
                             </div>
                         </div>
@@ -486,7 +496,7 @@
                         <div class="divForm3Txt">
                             <textarea name="txtDescricao" id="txtDescricao" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="divForm3Button" >
+                        <div class="divForm3Button">
                             <button type="submit" id="divForm3Enviar">Agendar</button>
                         </div>
                     </div>
@@ -502,6 +512,7 @@
         <div id="footerVermelho"><img src="./img/logoVermelha1.svg" id="imgFormLogo" alt="Logo"></div>
         <div id="footerLogo"><img src="./img/imgLogoBlackRed.svg" id="imgLogo"></div>
     </footer>
-    <script src="./js/script.js"></script>
+
 </body>
+
 </html>

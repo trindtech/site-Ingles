@@ -71,7 +71,7 @@ b {
     color: #EA394E;
 }
 
-button {
+button, #formInputFile {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -219,13 +219,15 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+#profilePic{
+    width: 100%;
+    height: 30%;
+    
+}
 
 #imgProfile {
     width: 100%;
     height: 100%;
-
-    max-width: 285px;
-    max-height: 285px;
     object-fit: cover;
     object-position: center;
     border-radius: 15px;
@@ -472,17 +474,19 @@ a {
     box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.25);
 
 }
-
+::placeholder{
+    color: #d6d6d6;
+    font-weight: 700;
+}
 /* Formulário*/
 .divFormFoto {
     width: 153px;
     height: 153px;
     border-radius: 76.5px;
-    object-fit: cover;
     object-position: center;
-    background-image: url(../img/imgProfile.jpg);
-    background-position: center;
-    background-size: cover;
+    align-items: center;
+    align-self: center;
+    object-fit: cover;
 }
 .divForm2, .divForm3{
     display: flex;
@@ -490,6 +494,17 @@ a {
 }
 .divForm3{
     gap: 40px;
+}
+#formInputFile{
+    text-transform: uppercase;
+    margin-bottom: 0px !important;
+    
+}
+#output{
+    height: 100%;
+    width: 100%;
+    border-radius: 76.5px;
+    object-fit: cover;
 }
 .divFormImg {
     object-fit: cover;
@@ -690,11 +705,6 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-    #imgProfile {
-        max-width: 185px;
-        max-height: 185px;
     }
 
     div#profilePic {
